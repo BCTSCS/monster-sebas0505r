@@ -1,8 +1,12 @@
-public class monster {
+public class Monster {
     private int arms, eyes, buttons;
     private String name;
-
-    public monster() {
+    
+    public Monster(int a, int e, int b, String n){
+        arms = a;
+        eyes = e;
+        buttons = b;
+        name = n;
     }
 
     public void setName(String name) {
@@ -34,5 +38,9 @@ public class monster {
     }
     public int getButtons() {
         return buttons;
+    }
+
+    public String toString(){
+        return "eyes:" + eyes + "arms:" + arms + "buttons:" + buttons + "name:" + name;
     }
 }
