@@ -43,4 +43,9 @@ public class Monster {
     public String toString(){
         return "eyes:" + eyes + "arms:" + arms + "buttons:" + buttons + "name:" + name;
     }
+
+    public static void main(String[] args) {
+        Monster monster1 = new Monster(2, 3, 4, "Frank");
+        System.out.println(monster1.toString());
+    }
 }
