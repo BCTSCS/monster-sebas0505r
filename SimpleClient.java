@@ -33,10 +33,12 @@ public class SimpleClient {
 
             while (true) {
                 String message = file.readLine();
-                a.sendMessage(message);
-            System.out.println("Me"+message);
-                String server = a.receiveMessage();
-                System.out.println("Server " + server);
+                if (message.equals("exit")){
+                    break;
+                }
+                System.out.println("Me: "+message);
+                String server =a.receiveMessage();
+                System.out.println("Server: "+server);
             }
             a.close();
         }
