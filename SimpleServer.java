@@ -26,6 +26,9 @@ public class SimpleServer {
     public String receiveMessage() {
         return in.nextLine(); 
     }
+    public void sendMessage(String message) {
+        out.println(message);
+    }
 
     public void close() {
     }
